@@ -1,0 +1,10 @@
+<h1>Please login</h1>
+
+{{#if error}}
+<h2 style="color: red">{{error}}</h2>
+{{/if}}
+<form action="/login" method="post">
+  <input type="email" name="email" placeholder="gimme your email" />
+  <input type="passwordHash" name="passwordHash" placeholder="gimme your password" />
+  <button type="submit" value="Signup">Login</button>
+</form>
